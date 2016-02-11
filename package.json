@@ -1,0 +1,11 @@
+{
+  "name": "dstvwatch",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Duane McKibbin <duane@entelect.co.za> (http://www.entelect.co.za)",
+  "license": "ISC"
+}
