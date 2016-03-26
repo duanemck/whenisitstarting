@@ -1,8 +1,8 @@
 var NodeCouchDB = require("node-couchdb");
 var couch = new NodeCouchDB("127.0.0.1", 5984);
 
-const dbName_bouquets = 'dstv_bouquets';
-const dbName_channels = 'dstv_channels';
+const dbName_bouquets = 'bouquets';
+const dbName_channels = 'channels';
 
 const notFound = 'not_found';
 

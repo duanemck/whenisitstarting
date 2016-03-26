@@ -1,5 +1,5 @@
-var scraper = require('./src/scraper/scraper');
-var storage = require('./src/storage/storage');
+var scraper = require('./background/scraper/scraper');
+var storage = require('./background/storage/storage');
 
 
 scraper.getBouquets().then((bouquets) => {
