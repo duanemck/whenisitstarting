@@ -1,16 +1,16 @@
 var scraper = require('./background/scraper/scraper');
-var storage = require('./background/storage/storage');
+var storage = require('./background/storage/storage-mongo');
 
 
 // scraper.getBouquets().then((bouquets) => {
 //    storage.saveBouquets(bouquets);
 // });
 
-// scraper.getChannels('745e86d7-0cea-4702-bf80-34e6e43fc911').then((channels) => {
-//    storage.saveChannels(channels);
-// });
-
-scraper.getSchedule('ACT','2016-03-27')
-.then(schedule => {
-    console.log(schedule);
+scraper.getChannels('c35aaecd-5dd1-480b-ae24-357e600a0e4d').then((channels) => {
+   storage.saveChannels(channels);
 });
+
+// scraper.getSchedule('ACT','2016-03-27')
+// .then(schedule => {
+//     console.log(schedule);
+// });
