@@ -1,5 +1,16 @@
-<p>
-  whenisitstarting-client Works!
-</p>
-
-<router-outlet></router-outlet>
+<md-sidenav-layout class="demo-root" fullscreen>
+  <md-sidenav #start mode="side" opened="true">
+    <md-nav-list>
+      <a [routerLink]="['Schedule']">Schedule</a>
+      <a [routerLink]="['Search']">Search</a>
+      <a [routerLink]="['Profile']">Settings</a>
+    </md-nav-list>
+  </md-sidenav>
+  <div>
+    <md-toolbar color="primary">
+    </md-toolbar>
+    <div class="demo-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</md-sidenav-layout>

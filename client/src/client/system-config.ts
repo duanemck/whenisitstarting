@@ -1,6 +1,9 @@
 const barrels: string[] = [
   'app',
   'app/shared',
+  'app/schedule',
+  'app/search',
+  'app/profile',
   /** @cli-barrel */
 ];
 
@@ -19,6 +22,20 @@ function createPackageConfig(barrelList: string[]): any {
 // Add your custom SystemJS configuration here.
 export const config: any = {
   packages: Object.assign({
-    // Add your custom SystemJS packages here.
-  }, createPackageConfig(barrels))
+    '@angular2-material': {
+      map: {
+        './button': './button/button.js',
+        './card': './card/card.js',
+        './checkbox': './checkbox/checkbox.js',
+        './input': './input/input.js',
+        './progress-circle': './progress-circle/progress-circle.js',
+        './sidenav': './sidenav/sidenav.js',
+        './toolbar': './toolbar/toolbar.js',
+        './list': './list/list.js',
+      }
+    },
+  }, createPackageConfig(barrels)),
+  map: {
+    '@angular2-material': 'vendor/@angular2-material'
+  }
 };
