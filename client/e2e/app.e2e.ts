@@ -1,14 +1,14 @@
-import { WhenisitstartingClientPage } from './app.po';
+import { WhenisitstartingPage } from './app.po';
 
-describe('whenisitstarting-client App', function() {
-  let page: WhenisitstartingClientPage;
+describe('whenisitstarting App', function() {
+  let page: WhenisitstartingPage;
 
   beforeEach(() => {
-    page = new WhenisitstartingClientPage();
+    page = new WhenisitstartingPage();
   })
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('whenisitstarting-client Works!');
+    expect(page.getParagraphText()).toEqual('whenisitstarting works!');
   });
 });

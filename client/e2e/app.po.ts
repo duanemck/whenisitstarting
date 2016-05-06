@@ -1,9 +1,9 @@
-export class WhenisitstartingClientPage {
+export class WhenisitstartingPage {
   navigateTo() {
     return browser.get('/');
   }
 
   getParagraphText() {
-    return element(by.css('whenisitstarting-client-app p')).getText();
+    return element(by.css('whenisitstarting-app h1')).getText();
   }
 }

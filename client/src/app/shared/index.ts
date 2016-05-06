@@ -1,0 +1,1 @@
+export { SubHeader } from './subheader/subheader.component';
