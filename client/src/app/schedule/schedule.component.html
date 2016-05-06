@@ -1,1 +1,18 @@
 <sub-header title="Schedule" icon="schedule"></sub-header>
+<form>    
+    <select [(ngModel)]="selectedBouquet" (ngModelChange)="onBouquetSelected()">
+        <option *ngFor="let b of bouquets" [ngValue]="b">{{b.name}}</option>
+    </select>
+    
+    <select [(ngModel)]="selectedChannel">
+        <option *ngFor="let b of channels" [ngValue]="b">{{b.number}} - {{b.name}}</option>
+    </select>
+</form>
+
+<div *ngIf="selectedChannel">
+    <img [src]="selectedChannel.largeLogo"/>
+    {{selectedChannel.name}}
+    {{selectedChannel.description}}
+</div>
+
+
